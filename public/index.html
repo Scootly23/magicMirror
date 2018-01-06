@@ -1,0 +1,36 @@
+<html ng-app='app'>
+<head>
+    
+    <!--  Scripts-->
+    <!--EXTERNAL DEPENDANCIES-->
+    <!--TODO: Host minified JS dependancies locally to prevent deprication-->
+    
+    <!-- jQuery and jQuery UI -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <!-- angularjs and angularfire -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <!--TODO: Manage routes and angular dependancies through 1 JS file-->
+    <script type="text/javascript" src="/public/app.js"></script>
+    <script type="text/javascript" src="/public/home.js"></script>
+    <script type="text/javascript" src="/public/services/MirrorDataService.js"></script>
+    <link rel="stylesheet" href="./public/site.css">
+    <link rel="stylesheet" href="./public/weather-icons.css"></link>
+    <!-- custom js and angularjs -->
+
+    <!-- Style -->
+    <!-- Todo host style dependencies locally -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Custom style -->
+</head>
+<body style="background-color: #000000">
+    <ng-view></ng-view>
+</body>
+</html>

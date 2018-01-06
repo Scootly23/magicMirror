@@ -1,0 +1,31 @@
+.red{
+    color: #ff0000;
+}
+.white{
+    color: #ffffff;
+}
+.header {
+	font-family: "Veranda",, sans-serif;
+	font-weight: 100;
+	line-height: 50.4px;
+	color: white;
+}
+.bodyText{
+	font-family: "Veranda",Veranda, sans-serif;
+	font-weight: 100;
+	line-height: 50.4px;
+	color: white;
+}
+.med-small{
+	font-size: 22px;
+}
+.medium{
+	font-size: 40px;
+}
+.large{
+	font-size: 72px;
+}
+.no-italics {
+    font-style: normal;   
+}
+

@@ -1,0 +1,38 @@
+<head>
+    <title>Under Construction</title>
+</head>
+<body style="background-color: #000000">
+    <p>HOME</p>
+    <div class="row text-center">  
+        <h1 style="color:white" class="header large">{{ vm.currentTime  | date:'hh:mm:ss'}}</h1>
+        <h4 style="color:white"class="header med-small">{{vm.currentTime | date:'EEEE, MMMM dd'}}</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-8 text-right">
+        <i id="weatherIcon" ng-class="vm.weatherIcon" class="header medium"></i>
+        <i id="temp" class="bodyText medium no-italics">{{vm.temperature}}</i><i class="white">&#x2109;</i>
+        <h4 class="bodyText med-small">{{vm.location}}</h4>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-8">
+          <div ng-if="vm.commuteTime <= 30"class="panel panel-danger" style="border:2px solid white">
+                <div class="panel-body text-center" style="background:#000000">
+                     <label style="color:white">Current commute time: </label>
+                     <label class="white" id="commuteTime"> {{vm.commuteTime}} min</label>
+                </div>
+            </div>
+            <div ng-if="vm.commuteTime > 30"class="panel panel-danger" style="border:2px solid red">
+                <div class="panel-body text-center" style="background:#000000">
+                     <label style="color:white">Current commute time: </label>
+                     <label class="red" id="commuteTime">{{vm.commuteTime}} min</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h4 id='banner'>THIS IS A PUBLIC SERVICE ANNOUNCEMENT, THIS IS ONLY A TEST</h4>
+    </div>
+</body>

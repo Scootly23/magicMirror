@@ -1,0 +1,23 @@
+{
+  "name": "magicmirror",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^4.8.1",
+    "google-distance-matrix": "^1.1.1",
+    "newsapi": "^2.1.0",
+    "npm": "^5.6.0",
+    "nyt": "^0.1.0",
+    "openweather-node": "0.0.4",
+    "redwrap": "0.0.4",
+    "weather-js": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott St. Amant",
+  "license": "ISC"
+}
